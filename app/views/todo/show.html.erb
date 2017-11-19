@@ -1,10 +1,11 @@
  <body>
-        <h2> <%=  @todo_description%> </h2>
+        <h2> <%=  @todo.description%> </h2>
         <h3>Todo #<%= params[:id] %></h3>
-        <span><%= 5%></span>
+        <span><%= @todo.pomodoro_estimate%></span>
         <input type="checkbox">
     
-    <a href="#" id="E"> Edit </a>
+    <a href="/todo/edit/<%=@todo.id%>"> Edit </a>
     <a href="#" id="D"> Delete </a>
-    <a href="index.html" id="gb"> Go back </a>
+    <a href="/todo/index" id="gb"> Go back </a>
+    
     </body>
