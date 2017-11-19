@@ -9,7 +9,7 @@
        <% @todos.each do |todo| %> 
         <li>
             <input type="checkbox">
-            <a href="show/<%=todo.id%>"> <%=todo.description%> </a>
+            <a href="/todo/show/<%=todo.id%>"> <%=todo.description%> </a>
             <span class="time-span"> <%=todo.pomodoro_estimate%> </span>
              
             </li> 
@@ -17,9 +17,7 @@
        
        </ul>
       <div id=New-todo >
-      <input id=" text"  type="text" placeholder = "Reminders">
-       <input id=" number" type="number" placeholder = "Dates">
-        <input id=" button" type= "submit" value ="Create new">
+        <a id="button-1" href="\todo\new">Create New</a>
         </div>
 
         </div>
