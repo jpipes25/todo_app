@@ -6,53 +6,14 @@
    <img id="The-Beast" src=http://www.ovosound.com/sites/g/files/g2000005016/f/styles/artist_image/public/201605/DVSN_OVO_ArtistIMG_2142_v3.jpg?itok=E52y08Oh"></img>
    <ul>
       
+       <% @todos.each do |todo| %> 
         <li>
             <input type="checkbox">
-            <a href="show/1"> Feed Knuckles </a>
-            <span class="time-span"> 5 mins </span>
+            <a href="show/<%=todo.id%>"> <%=todo.description%> </a>
+            <span class="time-span"> <%=todo.pomodoro_estimate%> </span>
              
-            </li>
-            
-        <li>
-            <input type="checkbox">
-            Let chicken thaw
-            <span class="time-span"> 50 mins </span>
-            </span>
-            </li>
-            
-       <li>
-           <input type="checkbox">
-           <span class="time-span"> 10 mins </span>
-           Sharpen knives</li>
-     
-       <li>
-           <input type="checkbox">
-           <span class="time-span">3 hours</span>
-           unload laundry</li>
-           
-       <li>
-           <input type="checkbox">
-           <span class="time-span">20 mins</span>
-           empty dishwasher</li>
-           
-       <li>
-           <input type="checkbox">
-           make history conclusion
-           <span class="time-span">30 mins</span>
-           </li>
-          
-    
-       <li>
-           <input type="checkbox">
-           <span class="time-span">5 mins</span>
-           call grandma </li>
-           
-       <li>
-           <input type="checkbox">
-           <span class="time-span">20 days</span>
-           eat peppermint dumplings </li>
-           
-           
+            </li> 
+            <% end %>
        
        </ul>
       <div id=New-todo >
